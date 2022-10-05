@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h4>Please enter a Random Number :</h4>
+      <input type="number" name="Number" id="myId" />
+      <button onclick="buttonAction()">click here</button>
+    </br>
+
+      <label for="number" id="radomno">(Random Number)</label>
+    </form>
+    <script>
+      function buttonAction() {
+        const inputVal = document.getElementById("myId").value;
+
+        let totalMoves = 0;
+        while (totalMoves < inputVal) {
+          document.getElementById("radomno").innerText = Math.floor(
+            Math.random() * 10
+          );
+          totalMoves++;
+          
+        }
+        arr.push(Math.floor(Math.random() * 10) + 1);
+      }
+    </script>
+  </body>
+</html>
